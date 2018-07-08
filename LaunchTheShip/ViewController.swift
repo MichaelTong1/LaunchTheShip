@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
         // Get the path for the sound
         
-        let path = Bundle.main.path(forResource: "LaunchTheShip", ofType: "wav")!
+        let path = Bundle.main.path(forResource: "hustle-on", ofType: "wav")!
         let url = URL(fileURLWithPath: path)
         do { // The error if cannot get audio
             player = try AVAudioPlayer(contentsOf: url)
