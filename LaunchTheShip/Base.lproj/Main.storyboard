@@ -42,8 +42,8 @@
                                         <rect key="frame" x="0.0" y="279" width="375" height="388"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The ship is launched!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpc-1r-J6X">
-                                        <rect key="frame" x="52" y="443" width="271" height="135"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The ship has launched!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpc-1r-J6X">
+                                        <rect key="frame" x="42" y="443" width="291" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -60,7 +60,7 @@
                     <connections>
                         <outlet property="cloudHolder" destination="TJv-1a-T00" id="bxO-ga-Q2B"/>
                         <outlet property="darkBlueBG" destination="TDq-Rp-1og" id="GEh-aE-uGc"/>
-                        <outlet property="launchLbl" destination="hpc-1r-J6X" id="6Rp-Gu-6gd"/>
+                        <outlet property="launchLbl" destination="hpc-1r-J6X" id="5eg-26-Wfx"/>
                         <outlet property="powerBtn" destination="oMj-bN-b8E" id="MSH-6l-35e"/>
                         <outlet property="rocket" destination="QcW-Lj-Eos" id="Slf-Q3-R2S"/>
                     </connections>
