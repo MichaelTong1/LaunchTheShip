@@ -42,13 +42,29 @@
                                         <rect key="frame" x="0.0" y="279" width="375" height="388"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The ship has launched!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpc-1r-J6X">
-                                        <rect key="frame" x="42" y="443" width="291" height="135"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The ship is ready!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpc-1r-J6X">
+                                        <rect key="frame" x="11" y="443" width="353" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pQL-M0-e3F">
+                                        <rect key="frame" x="32" y="555" width="310" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.93776089189554246" green="1" blue="0.90527790631255389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3W-LZ-KUU">
+                                        <rect key="frame" x="63" y="564" width="249" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                                        <state key="normal" title="Launch">
+                                            <color key="titleColor" red="0.26492599449901311" green="0.55392489433654968" blue="0.90945374965667725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="launchBtnPressesd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1B0-Bf-zJg"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.31298828125" green="0.84727647569444442" blue="0.94425455729166663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <viewLayoutGuide key="safeArea" id="kGN-uV-6qV"/>
@@ -59,7 +75,10 @@
                     </view>
                     <connections>
                         <outlet property="cloudHolder" destination="TJv-1a-T00" id="bxO-ga-Q2B"/>
+                        <outlet property="clouds" destination="cZF-gu-qB3" id="ak5-Z2-nly"/>
                         <outlet property="darkBlueBG" destination="TDq-Rp-1og" id="GEh-aE-uGc"/>
+                        <outlet property="launchBox" destination="pQL-M0-e3F" id="iOG-p6-HIP"/>
+                        <outlet property="launchBtn" destination="p3W-LZ-KUU" id="yoM-oD-f0M"/>
                         <outlet property="launchLbl" destination="hpc-1r-J6X" id="5eg-26-Wfx"/>
                         <outlet property="powerBtn" destination="oMj-bN-b8E" id="MSH-6l-35e"/>
                         <outlet property="rocket" destination="QcW-Lj-Eos" id="Slf-Q3-R2S"/>
