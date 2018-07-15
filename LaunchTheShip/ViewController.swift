@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation // Allows to play sound
+import CoreMotion // Checks gyroscope
 
 class ViewController: UIViewController {
     
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var clouds: UIImageView!
     
     
+    var motionManager = CMMotionManager()
     var player: AVAudioPlayer!
     var player2: AVAudioPlayer!
     
@@ -68,6 +70,10 @@ class ViewController: UIViewController {
         
     }
     
+
+
+    
+    
     @IBAction func launchBtnPressesd(_ sender: Any) {
         
         player2.play()
@@ -80,12 +86,7 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 1.0, animations: {
             self.rocket.frame = CGRect(x: 0, y: 900, width: 375, height: 0)
         })
-            UIView.animate(withDuration: 5.0, animations: {
-                self.rocket.frame = CGRect(x: (-100), y: 850, width: 375, height: 0)
-            })
-            UIView.animate(withDuration: 6.0, animations: {
-                self.rocket.frame = CGRect(x: 100, y: 800, width: 375, height: 0)
-            })
+        
         }
     
     }
